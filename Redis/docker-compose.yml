@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  redis:
+    image: redis:7.0.8-alpine
+    container_name: LocalRedis
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --loglevel warning --requirepass 1234
+    volumes: #optional
+      - ~/data:/data
