@@ -7,6 +7,6 @@ services:
     restart: always
     ports:
       - '6379:6379'
-    command: redis-server --loglevel warning --requirepass 1234
+    command: redis-server --loglevel warning #--requirepass 1234
     volumes: #optional
       - ~/data:/data
