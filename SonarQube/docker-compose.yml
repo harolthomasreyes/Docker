@@ -7,6 +7,12 @@ services:
       - 9000
     ports:
       - "127.0.0.1:9000:9000"
+    #In case of issue with ports
+    # expose:
+    #   - 19000
+    # ports:
+    #   - "19000:9000"
+    #   - "19092:9092"
     networks:
       - sonarnet
     environment:
